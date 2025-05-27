@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Internal CSS example -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="mainHeader">
+        <!-- Inline style example -->
+        <h1 style="color: red;">Local Community Event Portal</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Discover Amazing Community Events</h2>
+            <p>Join your neighbors and participate in exciting local activities</p>
+            <button class="cta-button">Explore Events</button>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            
+            <div class="event-grid">
+                <div class="eventCard">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=200&fit=crop&crop=center" alt="Music Festival">
+                    <h3>Summer Music Festival</h3>
+                    <p>Join us for an amazing evening of local music and community spirit. Food trucks, live performances, and family fun!</p>
+                    <div class="event-details">
+                        <span class="date">June 15, 2025</span>
+                        <span class="location">City Park</span>
+                    </div>
+                </div>
+
+                <div class="eventCard">
+                    <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=300&h=200&fit=crop&crop=center" alt="Farmers Market">
+                    <h3>Weekly Farmers Market</h3>
+                    <p>Fresh produce, local crafts, and artisanal goods from our community vendors. Support local businesses!</p>
+                    <div class="event-details">
+                        <span class="date">Every Saturday</span>
+                        <span class="location">Main Street</span>
+                    </div>
+                </div>
+
+                <div class="eventCard">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop&crop=center" alt="Book Club">
+                    <h3>Community Book Club</h3>
+                    <p>Monthly discussions about great literature. This month we're reading "The Seven Husbands of Evelyn Hugo".</p>
+                    <div class="event-details">
+                        <span class="date">June 20, 2025</span>
+                        <span class="location">Public Library</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section with Multi-column -->
+        <section class="news-section">
+            <h2>Community Bulletin</h2>
+            <div class="news-content">
+                <p>The city council has announced several exciting updates for our community. The new playground equipment at Riverside Park has been installed and is now open for families to enjoy. The playground features modern safety equipment and accessible play structures for children of all abilities.</p>
+                
+                <p>Construction on the new community center is progressing ahead of schedule. The facility will include a gymnasium, meeting rooms, and a commercial kitchen for community events. Expected completion is set for fall 2025.</p>
+                
+                <p>The annual charity drive exceeded expectations this year, raising over $50,000 for local families in need. Special thanks to all volunteers and donors who made this possible. The funds will support food assistance programs and educational scholarships.</p>
+                
+                <p>Don't forget to register for the summer youth programs. Activities include sports camps, art classes, and STEM workshops. Registration deadline is June 30th, and spaces are filling up quickly.</p>
+            </div>
+        </section>
+
+        <!-- Admin Table -->
+        <section class="admin-section">
+            <h2>Event Management Dashboard</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Attendees</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Summer Music Festival</td>
+                        <td>June 15, 2025</td>
+                        <td>City Park</td>
+                        <td>250</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Farmers Market</td>
+                        <td>Weekly</td>
+                        <td>Main Street</td>
+                        <td>150</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Book Club Meeting</td>
+                        <td>June 20, 2025</td>
+                        <td>Public Library</td>
+                        <td>25</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Charity Run</td>
+                        <td>July 4, 2025</td>
+                        <td>Riverside Trail</td>
+                        <td>100</td>
+                        <td>Planning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <h2>Get In Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Local Community Event Portal. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#support">Support</a>
+        </div>
+    </footer>
+</body>
+</html>

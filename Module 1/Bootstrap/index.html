@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Complete Exercises</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body { padding-top: 70px; }
+        .exercise-section { margin: 50px 0; padding: 30px; border: 2px solid #e9ecef; border-radius: 10px; }
+        .exercise-title { color: #0d6efd; margin-bottom: 20px; }
+        .demo-content { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .custom-footer { background: linear-gradient(45deg, #007bff, #6f42c1); }
+    </style>
+</head>
+<body>
+    <!-- Exercise 10.1: Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-bootstrap"></i> Bootstrap Exercises
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#grid">Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#components">Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#utilities">Utilities</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search...">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- Exercise 3.1 & 4.1: Grid Layouts -->
+        <section class="exercise-section" id="grid">
+            <h2 class="exercise-title display-4">Grid System Exercises</h2>
+            
+            <!-- Exercise 3.1: Responsive three-column layout -->
+            <h4>Exercise 3.1: Responsive Three-Column Layout</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="demo-content">Column 1: Full width on mobile, half on tablet, third on desktop</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="demo-content">Column 2: Full width on mobile, half on tablet, third on desktop</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="demo-content">Column 3: Full width on mobile, half on tablet, third on desktop</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise 4.1: Sidebar layout -->
+            <h4 class="mt-4">Exercise 4.1: Sidebar Layout</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="demo-content">
+                            <h5>Sidebar</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none">Navigation Item 1</a></li>
+                                <li><a href="#" class="text-decoration-none">Navigation Item 2</a></li>
+                                <li><a href="#" class="text-decoration-none">Navigation Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="demo-content">
+                            <h5>Main Content Area</h5>
+                            <p>This is the main content area that takes up 75% of the width on medium screens and above.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise 4.2: Four-column equal layout -->
+            <h4 class="mt-4">Exercise 4.2: Four-Column Equal Layout</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="demo-content">Column 1</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="demo-content">Column 2</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="demo-content">Column 3</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="demo-content">Column 4</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise 5.1: Centered content -->
+            <h4 class="mt-4">Exercise 5.1: Centered Content</h4>
+            <div class="container">
+                <div class="row justify-content-center align-items-center" style="min-height: 200px; background: #f8f9fa;">
+                    <div class="col-md-6 text-center">
+                        <div class="demo-content">
+                            <h5>Centered Content</h5>
+                            <p>This content is centered both horizontally and vertically</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exercise 5.2: Column reordering -->
+            <h4 class="mt-4">Exercise 5.2: Column Reordering</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 order-md-2">
+                        <div class="demo-content">Main Content (appears second on desktop, first on mobile)</div>
+                    </div>
+                    <div class="col-md-4 order-md-1">
+                        <div class="demo-content">Sidebar (appears first on desktop, second on mobile)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7: Typography -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Typography Exercises</h2>
+            
+            <div class="container">
+                <h1 class="display-1">Display 1 Heading</h1>
+                <h2 class="display-4">Display 4 Heading</h2>
+                <p class="lead">This is a lead paragraph that stands out from regular text.</p>
+                <p class="text-muted">This text is muted and less prominent.</p>
+                <p class="fw-bold">This text is bold.</p>
+                <p class="fw-light">This text is light weight.</p>
+                <p class="text-uppercase">this text is uppercase</p>
+                <p class="text-lowercase">THIS TEXT IS LOWERCASE</p>
+                <p class="text-capitalize">this text is capitalized</p>
+            </div>
+        </section>
+
+        <!-- Exercise 8: Forms -->
+        <section class="exercise-section" id="components">
+            <h2 class="exercise-title display-4">Form Exercises</h2>
+            
+            <!-- Exercise 8.1: Registration form -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Exercise 8.1: Registration Form</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">@</span>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms">
+                                <label class="form-check-label" for="terms">
+                                    I agree to the terms and conditions
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </form>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h4>Exercise 8.2: Floating Labels Login Form</h4>
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                                <label for="floatingEmail">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <button class="btn btn-outline-primary w-100" type="submit">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 9: Buttons -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Button Exercises</h2>
+            
+            <div class="container">
+                <h4>Exercise 9.1: Button Variants</h4>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary me-2">Primary</button>
+                    <button type="button" class="btn btn-secondary me-2">Secondary</button>
+                    <button type="button" class="btn btn-success me-2">Success</button>
+                    <button type="button" class="btn btn-danger me-2">Danger</button>
+                    <button type="button" class="btn btn-warning me-2">Warning</button>
+                    <button type="button" class="btn btn-info me-2">Info</button>
+                    <button type="button" class="btn btn-light me-2">Light</button>
+                    <button type="button" class="btn btn-dark me-2">Dark</button>
+                </div>
+                
+                <div class="mb-3">
+                    <button type="button" class="btn btn-outline-primary me-2">Outline Primary</button>
+                    <button type="button" class="btn btn-outline-secondary me-2">Outline Secondary</button>
+                    <button type="button" class="btn btn-outline-success me-2">Outline Success</button>
+                    <button type="button" class="btn btn-outline-danger me-2">Outline Danger</button>
+                </div>
+
+                <h4>Exercise 9.2: Button Groups and Toggle Buttons</h4>
+                <div class="btn-group mb-3" role="group">
+                    <button type="button" class="btn btn-outline-primary">Left</button>
+                    <button type="button" class="btn btn-outline-primary">Middle</button>
+                    <button type="button" class="btn btn-outline-primary">Right</button>
+                </div>
+                
+                <div class="btn-group mb-3" role="group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 10.2: Navigation Tabs -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Navigation Exercises</h2>
+            
+            <div class="container">
+                <h4>Exercise 10.2: Tabbed Navigation</h4>
+                <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button">Contact</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home">
+                        <p>This is the home tab content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <p>This is the profile tab content. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="tab-pane fade" id="contact">
+                        <p>This is the contact tab content. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    </div>
+                </div>
+
+                <h4 class="mt-4">Nav Pills</h4>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercise 11: Cards -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Card Exercises</h2>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Exercise 11.1: Profile Card</h4>
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300x200/0d6efd/ffffff?text=Profile+Image" class="card-img-top" alt="Profile">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Full Stack Developer with 5+ years of experience in web development.</p>
+                                <a href="#" class="btn btn-primary">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <h4>Exercise 11.2: Media Object</h4>
+                        <div class="d-flex">
+                            <img src="https://via.placeholder.com/64x64/28a745/ffffff?text=U1" class="flex-shrink-0 me-3 rounded-circle" alt="User 1">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                This is some placeholder content for the media object. You can use this for comments, testimonials, or any content that needs an aligned image.
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mt-3">
+                            <img src="https://via.placeholder.com/64x64/dc3545/ffffff?text=U2" class="flex-shrink-0 me-3 rounded-circle" alt="User 2">
+                            <div class="media-body">
+                                <h5 class="mt-0">Another media object</h5>
+                                This is another example of the media object pattern using Bootstrap's flexbox utilities.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 12: Spacing -->
+        <section class="exercise-section" id="utilities">
+            <h2 class="exercise-title display-4">Spacing Utilities</h2>
+            
+            <div class="container">
+                <h4>Exercise 12.1: Margin and Padding Examples</h4>
+                <div class="bg-light p-3 mb-4">
+                    <div class="bg-primary text-white p-2 m-3">Padding 2, Margin 3</div>
+                    <div class="bg-success text-white py-4 mt-4">Vertical Padding 4, Top Margin 4</div>
+                </div>
+                
+                <h4>Exercise 12.2: Pricing Section</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header bg-primary text-white text-center py-3">
+                                <h4 class="my-0 fw-normal">Basic</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <h1 class="card-title pricing-card-title">$9<small class="text-muted fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li class="py-1">10 users included</li>
+                                    <li class="py-1">2 GB of storage</li>
+                                    <li class="py-1">Email support</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary w-100">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header bg-success text-white text-center py-3">
+                                <h4 class="my-0 fw-normal">Pro</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <h1 class="card-title pricing-card-title">$19<small class="text-muted fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li class="py-1">50 users included</li>
+                                    <li class="py-1">10 GB of storage</li>
+                                    <li class="py-1">Priority email support</li>
+                                </ul>
+                                <button type="button" class="btn btn-success w-100">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header bg-warning text-dark text-center py-3">
+                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <h1 class="card-title pricing-card-title">$49<small class="text-muted fw-light">/mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li class="py-1">Unlimited users</li>
+                                    <li class="py-1">100 GB of storage</li>
+                                    <li class="py-1">Phone and email support</li>
+                                </ul>
+                                <button type="button" class="btn btn-warning w-100">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 13: Colors and Backgrounds -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Colors and Background Exercises</h2>
+            
+            <div class="container">
+                <h4>Exercise 13.1: Dashboard with Contextual Colors</h4>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="bg-primary text-white p-3 rounded">
+                            <h5>Primary Section</h5>
+                            <p class="mb-0">Important information</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="bg-success text-white p-3 rounded">
+                            <h5>Success Section</h5>
+                            <p class="mb-0">Completed tasks: 15</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="bg-warning text-dark p-3 rounded">
+                            <h5>Warning Section</h5>
+                            <p class="mb-0">Pending items: 3</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="bg-danger text-white p-3 rounded">
+                            <h5>Danger Section</h5>
+                            <p class="mb-0">Critical errors: 1</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4>Exercise 13.2: Gradient Background</h4>
+                <div class="bg-gradient bg-dark text-white p-4 rounded">
+                    <h5>Gradient Background with Dark Theme</h5>
+                    <p class="text-light mb-0">This section uses a gradient background with white text for better contrast.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 14: Display and Visibility -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Display and Visibility Exercises</h2>
+            
+            <div class="container">
+                <h4>Exercise 14.1: Responsive Display Utilities</h4>
+                <div class="alert alert-info d-block d-md-none">
+                    <strong>Mobile Only:</strong> This message only appears on mobile devices.
+                </div>
+                <div class="alert alert-success d-none d-md-block d-lg-none">
+                    <strong>Tablet Only:</strong> This message only appears on tablet devices.
+                </div>
+                <div class="alert alert-warning d-none d-lg-flex align-items-center">
+                    <i class="bi bi-laptop me-2"></i>
+                    <strong>Desktop Only:</strong> This message only appears on desktop devices and uses flexbox.
+                </div>
+                
+                <h4>Exercise 14.2: Responsive Sidebar</h4>
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block">
+                        <div class="bg-light p-3 rounded">
+                            <h6>Responsive Sidebar</h6>
+                            <p class="small mb-0">This sidebar only shows on tablet and desktop screens.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="bg-info bg-gradient text-white p-3 rounded">
+                            <h6>Main Content</h6>
+                            <p class="mb-0">This content area expands to full width on mobile when the sidebar is hidden.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 15: Borders, Shadows, and Rounded Corners -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Border and Shadow Exercises</h2>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Exercise 15.1: Border Utilities</h4>
+                        <img src="https://via.placeholder.com/150x150/6f42c1/ffffff?text=Profile" 
+                             class="border border-primary border-3 rounded-circle mb-3" alt="Profile with borders">
+                        <div class="border border-success p-3 rounded">
+                            <p class="mb-0">This div has a green border with rounded corners.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h4>Exercise 15.2: Shadows and Pills</h4>
+                        <div class="card shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with Large Shadow</h5>
+                                <p class="card-text">This card demonstrates the shadow-lg utility class.</p>
+                                <span class="badge bg-primary rounded-pill">Rounded Pill Badge</span>
+                                <span class="badge bg-success rounded-pill ms-2">Another Badge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 16: Positioning -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Positioning Exercises</h2>
+            
+            <div class="container">
+                <h4>Exercise 16.2: Relative and Absolute Positioning</h4>
+                <div class="position-relative bg-light p-4 rounded" style="height: 200px;">
+                    <img src="https://via.placeholder.com/100x100/fd7e14/ffffff?text=Image" class="rounded" alt="Sample image">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        99+
+                    </span>
+                    <p class="mt-3">This demonstrates absolute positioning of a badge over an image using relative positioning.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 17: Icons -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Bootstrap Icons Exercises</h2>
+            
+            <div class="container">
+                <h4>Exercise 17.1: Social Media Icons</h4>
+                <div class="mb-4">
+                    <a href="#" class="btn btn-primary me-2">
+                        <i class="bi bi-facebook"></i> Facebook
+                    </a>
+                    <a href="#" class="btn btn-info me-2">
+                        <i class="bi bi-twitter"></i> Twitter
+                    </a>
+                    <a href="#" class="btn btn-danger me-2">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                    <a href="#" class="btn btn-success me-2">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+                
+                <h4>Exercise 17.2: Icon-Only Buttons</h4>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary" title="Home">
+                        <i class="bi bi-house"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" title="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" title="Settings">
+                        <i class="bi bi-gear"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" title="Profile">
+                        <i class="bi bi-person"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 18: JavaScript Plugins -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">JavaScript Plugin Exercises</h2>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Exercise 18.1: Modal Popup</h4>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch Demo Modal
+                        </button>
+                        
+                        <div class="modal fade" id="exampleModal" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Bootstrap Modal</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>This is a Bootstrap 5 modal popup. You can add any content here including forms, images, or other components.</p>
+                                        <div class="alert alert-info">
+                                            <i class="bi bi-info-circle"></i>
+                                            This modal demonstrates Bootstrap's JavaScript functionality.
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h4>Exercise 18.2: Collapsible Accordion</h4>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Accordion Item #1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Accordion Item #3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It includes additional content and demonstrates the collapsible behavior.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 6: Flexbox Utilities -->
+        <section class="exercise-section">
+            <h2 class="exercise-title display-4">Flexbox Utility Exercises</h2>
+            
+            <div class="container">
+                <h4>Exercise 6.1: Responsive Navbar with Flexbox</h4>
+                <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-4">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">FlexNav</a>
+                        <div class="d-flex flex-column flex-md-row">
+                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+                
+                <h4>Exercise 6.2: Card with Flexbox Layout</h4>
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title mb-1">Flexbox Card</h5>
+                            <p class="card-text mb-0">Content is aligned using flexbox utilities.</p>
+                        </div>
+                        <button class="btn btn-primary">Action</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Exercise 16.1: Fixed Footer -->
+    <footer class="custom-footer text-white text-center py-4 position-fixed bottom-0 w-100 d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-start">
+                    <p class="mb-0">&copy; 2025 Bootstrap Exercises. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <!-- Exercise 17.1: Social Media Icons in Footer -->
+                    <a href="#" class="text-white me-3" title="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="text-white me-3" title="Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white me-3" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Additional JavaScript for enhanced functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize tooltips for icon buttons
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+            
+            // Add smooth scrolling for navbar links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Exercise 18: Additional modal functionality
+            const modal = document.getElementById('exampleModal');
+            if (modal) {
+                modal.addEventListener('show.bs.modal', function (event) {
+                    console.log('Modal is about to be shown');
+                });
+                
+                modal.addEventListener('hidden.bs.modal', function (event) {
+                    console.log('Modal has been hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

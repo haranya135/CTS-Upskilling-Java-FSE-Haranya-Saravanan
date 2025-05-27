@@ -1,0 +1,524 @@
+/* ===== CSS3 COMMUNITY EVENT PORTAL STYLES ===== */
+
+/* Universal selector - Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== TYPOGRAPHY AND FONTS ===== */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Element selectors for headings */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Grouping selectors */
+h3, p {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #34495e;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+/* ===== HEADER STYLES ===== */
+/* ID selector for main header */
+#mainHeader {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#mainHeader h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== NAVIGATION STYLES ===== */
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style-position: inside;
+}
+
+.nav-menu li {
+    padding: 0.5rem 1rem;
+}
+
+/* Link styling with pseudo-classes */
+.nav-menu a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+.nav-menu a:link {
+    color: #2c3e50;
+}
+
+.nav-menu a:visited {
+    color: #34495e;
+}
+
+.nav-menu a:hover {
+    color: white;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu a:active {
+    transform: translateY(0);
+}
+
+/* ===== MAIN CONTENT STYLES ===== */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Style for main CTA button */
+.cta-button {
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(45deg, #0056b3, #003d82);
+}
+
+/* ===== EVENTS SECTION ===== */
+.events-section {
+    margin-bottom: 4rem;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Class selector for event cards */
+.eventCard {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.eventCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-color: #667eea;
+}
+
+.eventCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.date, .location {
+    font-weight: 500;
+    color: #667eea;
+}
+
+/* ===== NEWS SECTION WITH MULTI-COLUMN ===== */
+.news-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-content {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid #ddd;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* ===== TABLE STYLING ===== */
+.admin-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.admin-table th {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.admin-table td {
+    background-color: #f8f9fa;
+}
+
+/* Zebra striping for table rows */
+.admin-table tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #dee2e6;
+    transition: background-color 0.3s ease;
+}
+
+/* ===== CONTACT FORM STYLES ===== */
+.contact-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 3px solid #667eea;
+    border-color: #667eea;
+    transform: scale(1.02);
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* ===== FOOTER STYLES ===== */
+footer {
+    background: rgba(44, 62, 80, 0.95);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* ===== VISIBILITY AND DISPLAY EXAMPLES ===== */
+.hidden-element {
+    visibility: hidden; /* Takes up space but not visible */
+}
+
+.display-none {
+    display: none; /* Completely removed from layout */
+}
+
+/* ===== RESPONSIVE DESIGN WITH MEDIA QUERIES ===== */
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    /* Stack navigation vertically */
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    /* Reduce font sizes */
+    #mainHeader h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    /* Single column layout for events */
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Single column for news */
+    .news-content {
+        column-count: 1;
+    }
+    
+    /* Responsive images */
+    .eventCard img {
+        height: 150px;
+    }
+    
+    /* Adjust padding */
+    main {
+        padding: 1rem;
+    }
+    
+    .hero {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    /* Further reduce font sizes */
+    #mainHeader h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Stack event details vertically */
+    .event-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* Responsive table - scroll horizontally */
+    .admin-table {
+        font-size: 0.8rem;
+    }
+    
+    .admin-table th,
+    .admin-table td {
+        padding: 0.5rem;
+    }
+    
+    /* Footer links stack vertically */
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Flexible units examples */
+.flexible-container {
+    width: 90vw; /* 90% of viewport width */
+    height: 50vh; /* 50% of viewport height */
+    max-width: 100%;
+}
+
+/* ===== ADVANCED CSS3 FEATURES ===== */
+
+/* Box shadow and border radius */
+.modern-card {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS Grid for advanced layouts */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* Flexbox for centering */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+/* CSS animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* CSS transitions for smooth interactions */
+.smooth-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CSS custom properties (variables) */
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --accent-color: #007BFF;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+    --border-radius: 15px;
+    --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
