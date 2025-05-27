@@ -1,0 +1,28 @@
+// module-info.java in com.greetings
+module com.greetings {
+    requires com.utils;
+}
+
+// module-info.java in com.utils
+module com.utils {
+    exports com.utils;
+}
+
+// Utility class in com.utils
+package com.utils;
+public class StringUtils {
+    public static String capitalize(String str) {
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
+    }
+}
+
+// Main class in com.greetings
+package com.greetings;
+import com.utils.StringUtils;
+
+public class Main {
+    public static void main(String[] args) {
+        String name = StringUtils.capitalize("alice");
+        System.out.println("Hello, " + name);
+    }
+}
